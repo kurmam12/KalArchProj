@@ -1,0 +1,5 @@
+package com.cog.pract.repository;
+
+public class VehicleOwnerRepoImpl {
+
+}

@@ -1,0 +1,12 @@
+package com.cog.pract.repository;
+
+import java.util.ArrayList;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cog.pract.model.VehicleOwner;
+
+public interface VehicleOwnerRepo extends JpaRepository<VehicleOwner, Long>{
+	ArrayList<VehicleOwner> findAllVehicleOwner();
+
+}

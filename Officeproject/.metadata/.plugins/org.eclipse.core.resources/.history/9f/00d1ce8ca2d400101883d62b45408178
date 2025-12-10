@@ -1,0 +1,24 @@
+package com.cog.pract.model;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+public class VehicleOwnerModel {
+	@Setter
+	@Getter
+	@AllArgsConstructor
+	 private String numberPlate;
+	 private String vehiclewnerName;
+	 private String engineNumber;
+	 private String chasis;
+	 private long mobile;
+	 private String city;
+	 private String state;
+	 
+	 
+	 
+
+}

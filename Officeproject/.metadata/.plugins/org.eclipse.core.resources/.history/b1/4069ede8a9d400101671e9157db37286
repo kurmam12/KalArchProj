@@ -1,0 +1,77 @@
+package com.cog.pract.model;
+
+import org.springframework.boot.persistence.autoconfigure.EntityScan;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+
+
+@Entity
+@AllArgsConstructo
+
+public class VehicleOwnerModel {
+	
+	 @Id
+	  @GeneratedValue(strategy=GenerationType.AUTO)
+	 private Long id;
+	 private String numberPlate;
+	 private String vehiclewnerName;
+	 private String engineNumber;
+	 private String chasis;
+	 private long mobile;
+	 private String city;
+	 private String state;
+	 
+	public String getNumberPlate() {
+		return numberPlate;
+	}
+	public void setNumberPlate(String numberPlate) {
+		this.numberPlate = numberPlate;
+	}
+	public String getVehiclewnerName() {
+		return vehiclewnerName;
+	}
+	public void setVehiclewnerName(String vehiclewnerName) {
+		this.vehiclewnerName = vehiclewnerName;
+	}
+	public String getEngineNumber() {
+		return engineNumber;
+	}
+	public void setEngineNumber(String engineNumber) {
+		this.engineNumber = engineNumber;
+	}
+	public String getChasis() {
+		return chasis;
+	}
+	public void setChasis(String chasis) {
+		this.chasis = chasis;
+	}
+	public long getMobile() {
+		return mobile;
+	}
+	public void setMobile(long mobile) {
+		this.mobile = mobile;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	 
+	 
+	 
+	 
+	 
+
+}

@@ -1,0 +1,10 @@
+package com.cog.pract.model;
+
+/*@Entity*/
+public class VehicleOwnerModel {
+	/*
+	 * umberplate varchar(30) NOT NULL,vehicleownername varchar(30), enginenumber
+	 * varchar(30),chasis varchar(30),mobile int,city varchar(30),state varchar(30)
+	 */
+
+}

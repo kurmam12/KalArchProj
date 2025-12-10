@@ -1,0 +1,17 @@
+package com.cog.pract.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class VehicleOwnerModel {
+	
+	 private String numberPlate;
+	 private String vehiclewnerName;
+	 private String engineNumber;
+	 private String chasis;
+	 private long mobile;
+	 private String city;
+	 private String state;
+	 
+
+}

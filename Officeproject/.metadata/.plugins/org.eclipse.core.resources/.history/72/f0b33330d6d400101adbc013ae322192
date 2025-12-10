@@ -1,0 +1,14 @@
+package com.cog.pract.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/vehicleowner")
+public class VehicleOwnerController {
+	@GetMapping
+    public String sayHello() {
+        return "Hello from Spring Boot!";
+    }
+
+}

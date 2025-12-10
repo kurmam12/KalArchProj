@@ -1,0 +1,39 @@
+package com.cog.pract.service;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cog.pract.model.VehicleOwner;
+import com.cog.pract.repository.VehicleOwnerRepo;
+
+@Service
+public class VehicleOwnerServiceImpl implements VehicleOwnerService{
+	
+	@Autowired
+	VehicleOwnerRepo vehicleOwnerRepo;	
+
+
+
+	@Override
+	public ArrayList<VehicleOwner> findAll() {
+		// TODO Auto-generated method stub
+		return null;}
+
+
+
+
+
+
+	@Override
+	public ArrayList<VehicleOwner> findVehcleNumber(String vehicleNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+
+}

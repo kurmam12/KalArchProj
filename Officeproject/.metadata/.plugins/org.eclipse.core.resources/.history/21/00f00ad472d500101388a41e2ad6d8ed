@@ -1,0 +1,6 @@
+package com.cog.pract.exception;
+
+public class VehicleNumberNotFoundException extends RuntimeException{
+	
+
+}

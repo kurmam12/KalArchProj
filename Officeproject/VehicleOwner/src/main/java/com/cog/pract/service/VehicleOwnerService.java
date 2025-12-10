@@ -1,0 +1,33 @@
+package com.cog.pract.service;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cog.pract.model.VehicleOwner;
+import com.cog.pract.repository.VehicleOwnerRepo;
+
+@Service
+public class VehicleOwnerService {
+	
+	@Autowired
+	VehicleOwnerRepo vehicleOwnerRepo;	
+
+public VehicleOwnerService(VehicleOwnerRepo vehicleOwnerRepo) {
+	this.vehicleOwnerRepo = vehicleOwnerRepo;
+}
+
+	
+	public ArrayList<VehicleOwner> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+		}
+
+	
+	public VehicleOwner findVehcleNumber(String vehicleNumber) {
+		// TODO Auto-generated method stub
+		System.out.println("The vehucle number is -->"+vehicleNumber);
+		return vehicleOwnerRepo.findByNumberPlateCustom(vehicleNumber);
+	}
+}

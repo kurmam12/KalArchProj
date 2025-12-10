@@ -1,0 +1,18 @@
+package com.cog.pract.service;
+
+import java.util.ArrayList;
+
+import com.cog.pract.model.VehicleOwner;
+import com.cog.pract.repository.VehicleOwnerRepo;
+
+public class VehicleOwnerServiceImpl implements VehicleOwnerService{
+	
+	VehicleOwnerRepo vehicleOwnerRepo; 
+
+	@Override
+	public ArrayList<VehicleOwner> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

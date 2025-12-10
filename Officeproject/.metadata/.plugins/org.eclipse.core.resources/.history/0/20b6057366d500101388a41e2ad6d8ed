@@ -1,0 +1,17 @@
+package com.cog.pract.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.cog.pract.model.VehicleOwner;
+
+public interface VehicleOwnerRepo extends JpaRepository<VehicleOwner, Long>{
+	//ArrayList<VehicleOwner> findAllVehicleOwner();
+	
+	@Query("SELECT b FROM VehicleOwner b WHERE b.numberplate = ?1")
+	ArrayList<VehicleOwner> findByNumberPlateCustom(String numberPlate);
+
+}

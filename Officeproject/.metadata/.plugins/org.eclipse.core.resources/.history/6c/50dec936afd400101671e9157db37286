@@ -1,0 +1,11 @@
+package com.cog.pract.service;
+
+import java.util.ArrayList;
+
+import com.cog.pract.model.VehicleOwner;
+
+public interface VehicleOwnerService {
+	
+	ArrayList<VehicleOwner> findAll();
+
+}
